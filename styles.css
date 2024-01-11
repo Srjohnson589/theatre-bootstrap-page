@@ -14,12 +14,16 @@ body {
     margin-left: 10vw;
 }
 
-.mynav {
-    background-color: black;
+#mynav {
+    background-color: black!important;
 }
 
 .navbar .container-fluid {
     justify-content: space-around;
+}
+
+#mynav a {
+    color: white!important;
 }
 
 #navbarNavAltMarkup {
@@ -50,7 +54,7 @@ h1 {
 /* April Show List */
 
 .show-schedule {
-    width: 600px;
+    width: 700px;
     margin: 5rem auto 1rem auto;
 }
 
@@ -65,35 +69,22 @@ h1 {
 
 /* Individual Show Cards */
 
-.container {  
-    display: grid;
-    grid-template-columns: 160px 250px 160px;
-    grid-gap: 0;
+.fcontainer {  
+    display: flex;
     margin: 10px auto;
-    width: 800px;
+    width: 700px;
     padding: 20px;
     border-bottom: 1px solid rgb(182, 179, 179);
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-.crop-container {
+img {
     width: 200px;
-    height: 150px;
-    overflow: hidden;
-}
-.crop-container img {
-    width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    align-self: center;
-
 }
 
 .card-text {
     padding: 5px 0 5px 40px;
-    width: 300px;
-    align-self: center;
-
 }
 
 .card-text h3 {
@@ -104,13 +95,8 @@ h1 {
     font-size: 14px;
 }
 
-.btn {
-    align-self: center;
-}
-
 button {
-    width: 100%;
-    align-self: center;
+    padding: 10px;
     background-color: rgb(255, 192, 57);
     color: white;
     border: 1px solid gray;
