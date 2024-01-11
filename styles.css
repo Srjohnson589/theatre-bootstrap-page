@@ -68,14 +68,22 @@ h2 {
 .card {
     display: flex;
     flex-direction: row;
-    height: 15rem;
+
+    height: 150px;
+    margin: 10px
+
+}
+
+.card-text {
+    font-size: 15px;
+    margin: 5px 0;
+    text-overflow: ellipsis;
+
 }
 
 .raisin-img {
     object-fit: cover;
 }
-
-
 
 .btn .btn-primary {
     background-color: yellow;
