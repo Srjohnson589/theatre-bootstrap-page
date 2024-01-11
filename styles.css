@@ -51,10 +51,10 @@ h1 {
 
 .show-schedule {
     width: 600px;
-    margin: 5rem auto 0 auto;
+    margin: 5rem auto 1rem auto;
 }
 
-h2 {
+.show-schedule h2 {
     font-size: 1rem;
     font-weight: 400;
     background-color: rgb(218, 218, 218);
@@ -65,26 +65,53 @@ h2 {
 
 /* Individual Show Cards */
 
-.card {
-    display: flex;
-    flex-direction: row;
+.container {  
+    display: grid;
+    grid-template-columns: 160px 250px 160px;
+    grid-gap: 0;
+    margin: 10px auto;
+    width: 800px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(182, 179, 179);
+}
 
+
+.crop-container {
+    width: 200px;
     height: 150px;
-    margin: 10px
+    overflow: hidden;
+}
+.crop-container img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    align-self: center;
 
 }
 
 .card-text {
-    font-size: 15px;
-    margin: 5px 0;
-    text-overflow: ellipsis;
+    padding: 5px 0 5px 40px;
+    width: 300px;
+    align-self: center;
 
 }
 
-.raisin-img {
-    object-fit: cover;
+.card-text h3 {
+    font-size: 16px;
 }
 
-.btn .btn-primary {
-    background-color: yellow;
+.card-text h2 {
+    font-size: 14px;
+}
+
+.btn {
+    align-self: center;
+}
+
+button {
+    width: 100%;
+    align-self: center;
+    background-color: rgb(255, 192, 57);
+    color: white;
+    border: 1px solid gray;
 }
